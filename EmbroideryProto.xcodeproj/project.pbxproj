@@ -17,6 +17,8 @@
 		26FCE1A91E31DF9300E33243 /* FormatPec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FCE1A81E31DF9300E33243 /* FormatPec.swift */; };
 		26FCE1AB1E31ED6C00E33243 /* FormatPes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FCE1AA1E31ED6C00E33243 /* FormatPes.swift */; };
 		26FCE1AD1E31F6E900E33243 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FCE1AC1E31F6E900E33243 /* UIColorExtension.swift */; };
+		2E06A9E020A37AB0004CD0BA /* Geometry2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06A9DF20A37AB0004CD0BA /* Geometry2D.swift */; };
+		2E06A9E220A386B5004CD0BA /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06A9E120A386B5004CD0BA /* TestViewController.swift */; };
 		337030B31E2AD885005A0F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337030B21E2AD885005A0F18 /* AppDelegate.swift */; };
 		337030B51E2AD885005A0F18 /* EmbroideryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337030B41E2AD885005A0F18 /* EmbroideryViewController.swift */; };
 		337030B81E2AD885005A0F18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337030B61E2AD885005A0F18 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 		26FCE1A81E31DF9300E33243 /* FormatPec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormatPec.swift; sourceTree = "<group>"; };
 		26FCE1AA1E31ED6C00E33243 /* FormatPes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormatPes.swift; sourceTree = "<group>"; };
 		26FCE1AC1E31F6E900E33243 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		2E06A9DF20A37AB0004CD0BA /* Geometry2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geometry2D.swift; sourceTree = "<group>"; };
+		2E06A9E120A386B5004CD0BA /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		337030AF1E2AD885005A0F18 /* EmbroideryProto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmbroideryProto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		337030B21E2AD885005A0F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		337030B41E2AD885005A0F18 /* EmbroideryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbroideryViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +89,9 @@
 				337030B41E2AD885005A0F18 /* EmbroideryViewController.swift */,
 				337030C51E2AD8D1005A0F18 /* StitchBlock.swift */,
 				337030C71E2B0C74005A0F18 /* StitchView.swift */,
+				2E06A9E120A386B5004CD0BA /* TestViewController.swift */,
 				337030B61E2AD885005A0F18 /* Main.storyboard */,
+				2E06A9DF20A37AB0004CD0BA /* Geometry2D.swift */,
 				337030C41E2AD8A7005A0F18 /* Supporting Files */,
 				26CB75691E2D49D00040C4A6 /* FormatPcs.swift */,
 				26FCE1A41E31D0D300E33243 /* InMemoryFile.swift */,
@@ -181,7 +187,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E06A9E020A37AB0004CD0BA /* Geometry2D.swift in Sources */,
 				337030B51E2AD885005A0F18 /* EmbroideryViewController.swift in Sources */,
+				2E06A9E220A386B5004CD0BA /* TestViewController.swift in Sources */,
 				26FCE1AD1E31F6E900E33243 /* UIColorExtension.swift in Sources */,
 				26CB75661E2D43B60040C4A6 /* EmbPattern.swift in Sources */,
 				337030C81E2B0C74005A0F18 /* StitchView.swift in Sources */,

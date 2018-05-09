@@ -21,7 +21,9 @@ class EmbroideryViewController: UIViewController {
         }
     }
     
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+    }
     func loadFile(_ theurl : URL) {
         BinaryHelper.load(url: theurl,
                           completion: {file in
