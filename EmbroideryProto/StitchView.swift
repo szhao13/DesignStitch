@@ -29,6 +29,7 @@ class StitchView: UIView {
         }
     }
 
+    
     func drawStitches() {
         let context = UIGraphicsGetCurrentContext()
         // scale and translate to the standard cartesian coordinate system where the (0,0) is the center of the screen.
