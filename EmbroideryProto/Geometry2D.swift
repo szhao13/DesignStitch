@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+
 public class Geometry2D {
     
     public func distanceSquared(point1: CGPoint, point2: CGPoint) -> CGFloat {
