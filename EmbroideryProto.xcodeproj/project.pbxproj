@@ -19,8 +19,13 @@
 		26FCE1AD1E31F6E900E33243 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FCE1AC1E31F6E900E33243 /* UIColorExtension.swift */; };
 		2E06A9E020A37AB0004CD0BA /* Geometry2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06A9DF20A37AB0004CD0BA /* Geometry2D.swift */; };
 		2E06A9E220A386B5004CD0BA /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06A9E120A386B5004CD0BA /* TestViewController.swift */; };
-		2E06A9E420A5362B004CD0BA /* Stitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06A9E320A5362B004CD0BA /* Stitch.swift */; };
-		2E06A9E620A54662004CD0BA /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06A9E520A54662004CD0BA /* Thread.swift */; };
+		2E06A9E420A5362B004CD0BA /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06A9E320A5362B004CD0BA /* Point.swift */; };
+		2E06A9E620A54662004CD0BA /* Points.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E06A9E520A54662004CD0BA /* Points.swift */; };
+		2E63E49B20A74F6F00BE488E /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63E49A20A74F6F00BE488E /* DrawView.swift */; };
+		2E7B998D20A77C5300779C6C /* PointsDirect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7B998C20A77C5300779C6C /* PointsDirect.swift */; };
+		2E7B998F20A8082100779C6C /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7B998E20A8082100779C6C /* Path.swift */; };
+		2E7B999120A809BF00779C6C /* UIBezierPath+LxThroughPointsBezier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7B999020A809BE00779C6C /* UIBezierPath+LxThroughPointsBezier.swift */; };
+		2E7B999320A8C0D900779C6C /* PointDirect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7B999220A8C0D900779C6C /* PointDirect.swift */; };
 		337030B31E2AD885005A0F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337030B21E2AD885005A0F18 /* AppDelegate.swift */; };
 		337030B51E2AD885005A0F18 /* EmbroideryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337030B41E2AD885005A0F18 /* EmbroideryViewController.swift */; };
 		337030B81E2AD885005A0F18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337030B61E2AD885005A0F18 /* Main.storyboard */; };
@@ -43,8 +48,13 @@
 		26FCE1AC1E31F6E900E33243 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		2E06A9DF20A37AB0004CD0BA /* Geometry2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geometry2D.swift; sourceTree = "<group>"; };
 		2E06A9E120A386B5004CD0BA /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
-		2E06A9E320A5362B004CD0BA /* Stitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stitch.swift; sourceTree = "<group>"; };
-		2E06A9E520A54662004CD0BA /* Thread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
+		2E06A9E320A5362B004CD0BA /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		2E06A9E520A54662004CD0BA /* Points.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Points.swift; sourceTree = "<group>"; };
+		2E63E49A20A74F6F00BE488E /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		2E7B998C20A77C5300779C6C /* PointsDirect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsDirect.swift; sourceTree = "<group>"; };
+		2E7B998E20A8082100779C6C /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		2E7B999020A809BE00779C6C /* UIBezierPath+LxThroughPointsBezier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIBezierPath+LxThroughPointsBezier.swift"; path = "../../../Downloads/LxThroughPointsBezier-Swift-master/UIBezierPath+LxThroughPointsBezier.swift"; sourceTree = "<group>"; };
+		2E7B999220A8C0D900779C6C /* PointDirect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointDirect.swift; sourceTree = "<group>"; };
 		337030AF1E2AD885005A0F18 /* EmbroideryProto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmbroideryProto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		337030B21E2AD885005A0F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		337030B41E2AD885005A0F18 /* EmbroideryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbroideryViewController.swift; sourceTree = "<group>"; };
@@ -87,10 +97,13 @@
 			isa = PBXGroup;
 			children = (
 				26CB75611E2D43B60040C4A6 /* BinaryHelper.swift */,
+				2E7B998E20A8082100779C6C /* Path.swift */,
 				26CB75621E2D43B60040C4A6 /* EmbPattern.swift */,
+				2E7B999020A809BE00779C6C /* UIBezierPath+LxThroughPointsBezier.swift */,
 				26CB75631E2D43B60040C4A6 /* FormatExp.swift */,
 				26CB75641E2D43B60040C4A6 /* StitchType.swift */,
 				337030B41E2AD885005A0F18 /* EmbroideryViewController.swift */,
+				2E63E49A20A74F6F00BE488E /* DrawView.swift */,
 				337030C51E2AD8D1005A0F18 /* StitchBlock.swift */,
 				337030C71E2B0C74005A0F18 /* StitchView.swift */,
 				2E06A9E120A386B5004CD0BA /* TestViewController.swift */,
@@ -103,8 +116,10 @@
 				26FCE1A81E31DF9300E33243 /* FormatPec.swift */,
 				26FCE1AA1E31ED6C00E33243 /* FormatPes.swift */,
 				26FCE1AC1E31F6E900E33243 /* UIColorExtension.swift */,
-				2E06A9E320A5362B004CD0BA /* Stitch.swift */,
-				2E06A9E520A54662004CD0BA /* Thread.swift */,
+				2E06A9E520A54662004CD0BA /* Points.swift */,
+				2E7B998C20A77C5300779C6C /* PointsDirect.swift */,
+				2E06A9E320A5362B004CD0BA /* Point.swift */,
+				2E7B999220A8C0D900779C6C /* PointDirect.swift */,
 			);
 			path = EmbroideryProto;
 			sourceTree = "<group>";
@@ -194,21 +209,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E06A9E020A37AB0004CD0BA /* Geometry2D.swift in Sources */,
+				2E7B998F20A8082100779C6C /* Path.swift in Sources */,
 				337030B51E2AD885005A0F18 /* EmbroideryViewController.swift in Sources */,
 				2E06A9E220A386B5004CD0BA /* TestViewController.swift in Sources */,
 				26FCE1AD1E31F6E900E33243 /* UIColorExtension.swift in Sources */,
 				26CB75661E2D43B60040C4A6 /* EmbPattern.swift in Sources */,
 				337030C81E2B0C74005A0F18 /* StitchView.swift in Sources */,
 				26FCE1AB1E31ED6C00E33243 /* FormatPes.swift in Sources */,
-				2E06A9E420A5362B004CD0BA /* Stitch.swift in Sources */,
+				2E06A9E420A5362B004CD0BA /* Point.swift in Sources */,
 				26FCE1A91E31DF9300E33243 /* FormatPec.swift in Sources */,
 				26FCE1A51E31D0D300E33243 /* InMemoryFile.swift in Sources */,
-				2E06A9E620A54662004CD0BA /* Thread.swift in Sources */,
+				2E06A9E620A54662004CD0BA /* Points.swift in Sources */,
 				26CB75671E2D43B60040C4A6 /* FormatExp.swift in Sources */,
 				26CB75681E2D43B60040C4A6 /* StitchType.swift in Sources */,
 				26CB756A1E2D49D00040C4A6 /* FormatPcs.swift in Sources */,
+				2E7B999320A8C0D900779C6C /* PointDirect.swift in Sources */,
+				2E7B998D20A77C5300779C6C /* PointsDirect.swift in Sources */,
 				26FCE1A71E31D8EE00E33243 /* FormatProtocol.swift in Sources */,
 				26CB75651E2D43B60040C4A6 /* BinaryHelper.swift in Sources */,
+				2E63E49B20A74F6F00BE488E /* DrawView.swift in Sources */,
+				2E7B999120A809BF00779C6C /* UIBezierPath+LxThroughPointsBezier.swift in Sources */,
 				337030C61E2AD8D1005A0F18 /* StitchBlock.swift in Sources */,
 				337030B31E2AD885005A0F18 /* AppDelegate.swift in Sources */,
 			);

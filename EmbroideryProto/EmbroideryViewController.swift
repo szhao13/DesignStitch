@@ -26,11 +26,14 @@ class EmbroideryViewController: UIViewController {
     var lastDroppedPoint = CGPoint.zero
     var currentThread : Thread?
     var geo = Geometry2D()
+    var points : PointsDirect()
+    var currPath : CGMutablePath?
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         swiped = false
         if let touch = touches.first {
             lastPoint = touch.location(in: self.stitchView)
+            var path = CGMutablePath()
         }
     }
     
@@ -69,7 +72,6 @@ class EmbroideryViewController: UIViewController {
         
         let radius = CGFloat(10.0)
         context?.move(to: currentPoint)
-      
         
         let rect = CGRect(origin: CGPoint.init(x: currentPoint.x - radius/2, y: currentPoint.y - radius/2), size: CGSize(width: radius, height: radius))
         context?.setFillColor(red: 255.0, green: 0.0, blue: 0.0, alpha: 1.0)
@@ -83,6 +85,8 @@ class EmbroideryViewController: UIViewController {
         UIGraphicsEndImageContext()
 //        lastDroppedPoint = currentPoint
 //        print("drawPoint is reached")
+        var p = PointDirect(x: currentPoint.x, y: currentPoint.y, data: 0)
+        points.addPoint(point: p)
     }
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         swiped = true
@@ -90,14 +94,17 @@ class EmbroideryViewController: UIViewController {
             let currentPoint = touch.location(in: view)
             drawLine(fromPoint: lastPoint, toPoint: currentPoint)
             var setDistance = 50.0
-            var distanceSq = Double(geo.distanceSquared(point1: lastDroppedPoint, point2: currentPoint))
-            print(distanceSq)
-            if distanceSq > setDistance * setDistance {
-                drawPoint(currentPoint: currentPoint)
-                lastDroppedPoint = currentPoint
+            var distance = Double(geo.distance(point1: lastDroppedPoint, point2: lastPoint))
+            print(distance)
+            if distance > setDistance {
+                drawPoint(currentPoint: lastPoint)
+                lastDroppedPoint = lastPoint
                 print("point distance is sufficient")
             }
-            
+            else if (distance > 0.10) {
+                var direction = geo.angleR(point1: lastPoint, point2: currentPoint)
+//                var
+            }
             lastPoint = currentPoint
         }
     }
@@ -107,13 +114,16 @@ class EmbroideryViewController: UIViewController {
     
             // current point is a specified distance away from the last point
             var setDistance = 50.0
-            var distanceSq = Double(geo.distanceSquared(point1: lastDroppedPoint, point2: lastPoint))
-            print(distanceSq)
-            if distanceSq > setDistance * setDistance {
+            var distance = Double(geo.distance(point1: lastDroppedPoint, point2: lastPoint))
+            print(distance)
+            if distance > setDistance {
                 drawPoint(currentPoint: lastPoint)
                 lastDroppedPoint = lastPoint
                 print("point distance is sufficient")
             }
+                // distance should be greater than min stitch distance which is 1/10 mm
+                // TODO: figure out units
+
             drawLine(fromPoint: lastPoint, toPoint: lastPoint)
             print("only draw line is reached")
             

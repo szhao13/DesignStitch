@@ -37,6 +37,17 @@ public class Geometry2D {
         return CGFloat(atan2(point2.y - point1.y, point2.x - point1.x))
     }
     
+    public func deltaAngleR(angle1: CGFloat, angle2: CGFloat) -> CGFloat {
+        let delta = angle1 - angle2
+        if delta > CGFloat.pi {
+            return (2 * CGFloat.pi) - delta
+        }
+        if (delta < -1 * CGFloat.pi) {
+            return delta + (2 * CGFloat.pi);
+        }
+        return delta
+    }
+    
 //    public func sortCGPointsCW(listOfCGPoints: [CGPoint]) -> [CGPoint] {
 //        
 //    }

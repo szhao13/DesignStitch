@@ -89,6 +89,7 @@
                         <leftBarButtonItems>
                             <barButtonItem title="Draw" id="Rnd-t4-hOE"/>
                             <barButtonItem title="Erase" id="nZl-4q-Dkj"/>
+                            <barButtonItem title="Sketch" id="2h1-Ze-U8G"/>
                         </leftBarButtonItems>
                     </navigationItem>
                     <connections>
